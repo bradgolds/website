@@ -1,14 +1,27 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #333;
 }
 
-nav {
-    background-color: #333;
+header {
+    background-image: url('placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 20px;
+    color: white;
+    text-align: center;
+}
+
+.top-nav {
+    background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,32 +30,41 @@ nav {
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 10px;
+    margin: 0 20px;
+    font-size: 18px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-.hero {
-    background-image: url('placeholder.jpg');
-    background-size: cover;
-    background-position: center;
+.social-media a {
     color: white;
-    padding: 100px 20px;
-    text-align: center;
-    margin-top: 50px; /* Adjust based on the height of your nav */
+    font-size: 20px;
+    margin-left: 15px;
 }
 
-#story, #contact {
-    padding: 20px;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+section {
     text-align: center;
-    background-color: #f4f4f4;
+    padding: 50px 20px;
 }
 
 footer {
@@ -50,5 +72,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
+    font-size: 14px;
 }
