@@ -7,26 +7,20 @@ body, html {
 }
 
 header {
-    background-image: url('placeholder.jpg');
-    background-size: cover;
-    background-position: center;
     color: white;
     text-align: center;
-    padding: 200px 20px;
 }
 
 .top-nav {
-    background-color: black;
-    color: white;
+    background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 5%;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 50px; /* Reduced height for a slimmer appearance */
 }
 
 ul {
@@ -34,21 +28,24 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    align-items: center;
+    height: 50px; /* Fixed height for alignment */
 }
 
-.logo {
-    font-size: 18px;
-    color: white;
-    text-transform: uppercase;
-    margin: 0 20px;
+ul li {
+    margin: 0 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
 ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
 }
 
 .social-icons a {
@@ -57,19 +54,27 @@ ul li a {
     font-size: 20px;
 }
 
+.hero {
+    padding: 150px 20px; /* Adjust padding for visual appeal */
+    background-image: url('placeholder.jpg'); /* Ensure this is correctly pathed */
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px; /* Space for fixed nav */
+}
+
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .hero p {
     font-size: 24px;
-    font-weight: lighter;
 }
 
 section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
+    background-color: #fff; /* Clear background for content */
 }
 
 footer {
